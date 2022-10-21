@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://alxrdev.github.io/notificationspage)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/notifications-page-solution-JIrKGirJa1)
+- Live Site URL: [Live Site URL](https://alxrdev.github.io/notifications-page/)
 
 ## My process
 
@@ -63,5 +63,5 @@ I learned a new CSS pseudo-class: ":has".
 ## Author
 
 - Github - [Alex Rodrigues Moreira](https://www.github.com/alxrdev)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/alxrdev)
-- Twitter - [@yourusername](https://www.twitter.com/alxrdev)
+- Frontend Mentor - [@alxrdev](https://www.frontendmentor.io/profile/alxrdev)
+- Twitter - [@alxrdev](https://www.twitter.com/alxrdev)
