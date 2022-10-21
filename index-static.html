@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <section class="notifications">
+        <header class="notifications__header">
+          <div class="notifications__title__count">
+            <h1 class="notifications__title">Notifications</h1>
+            <span class="notifications__count">3</span>
+          </div>
+          <span class="notifications__action">Mark all as read</span>
+        </header>
+
+        <main class="notifications__list">
+          <div class="notifications__item notifications__item--unread">
+            <img
+              src="./assets/images/avatar-mark-webber.webp"
+              alt="Jacobe Thompson"
+              class="notifications__picture"
+            />
+            <div class="notifications__content">
+              <span class="notifications__topic">
+                <a href="#" class="notifications__userlink">Mark Webber</a>
+                reacted to your recent post
+                <a href="#" class="notifications__postlink"
+                  >My first tournament today!</a
+                >
+              </span>
+              <span class="notifications__date">1m ago</span>
+            </div>
+          </div>
+
+          <div class="notifications__item notifications__item--unread">
+            <img
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="Jacobe Thompson"
+              class="notifications__picture"
+            />
+            <div class="notifications__content">
+              <span class="notifications__topic">
+                <a href="#" class="notifications__userlink">Angela Gray</a>
+                followed you
+              </span>
+              <span class="notifications__date">5m ago</span>
+            </div>
+          </div>
+
+          <div class="notifications__item notifications__item--unread">
+            <img
+              src="./assets/images/avatar-jacob-thompson.webp"
+              alt="Jacobe Thompson"
+              class="notifications__picture"
+            />
+            <div class="notifications__content">
+              <span class="notifications__topic">
+                <a href="#" class="notifications__userlink">Jacob Thompson</a>
+                has joined your group
+                <a href="#" class="notifications__grouplink">Chess Club</a>
+              </span>
+              <span class="notifications__date">5m ago</span>
+            </div>
+          </div>
+
+          <div class="notifications__item">
+            <img
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="Jacobe Thompson"
+              class="notifications__picture"
+            />
+            <div class="notifications__content">
+              <span class="notifications__topic">
+                <a href="#" class="notifications__userlink">Rizky Hasanuddin</a>
+                sent you a private message
+              </span>
+              <span class="notifications__date">5 days ago</span>
+              <div class="notifications__message">
+                <p>
+                  Hello, thanks for setting up the Chess Club. I've been a
+                  member for a few weeks now and I'm already having lots of fun
+                  and improving my game.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="notifications__item">
+            <img
+              src="./assets/images/avatar-kimberly-smith.webp"
+              alt="Jacobe Thompson"
+              class="notifications__picture"
+            />
+            <div class="notifications__content">
+              <span class="notifications__topic">
+                <a href="#" class="notifications__userlink">Kimberly Smith</a>
+                commented on your picture
+              </span>
+              <span class="notifications__date">1 week ago</span>
+            </div>
+            <div class="notifications__postimage">
+              <img
+                src="./assets/images/image-chess.webp"
+                alt="Jacobe Thompson"
+              />
+            </div>
+          </div>
+
+          <div class="notifications__item">
+            <img
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="Jacobe Thompson"
+              class="notifications__picture"
+            />
+            <div class="notifications__content">
+              <span class="notifications__topic">
+                <a href="#" class="notifications__userlink">Nathan Peterson</a>
+                reacted to your recent post
+                <a href="#" class="notifications__postlink"
+                  >5 end-game strategies to increase your win rate</a
+                >
+              </span>
+              <span class="notifications__date">2 weeks ago</span>
+            </div>
+          </div>
+
+          <div class="notifications__item">
+            <img
+              src="./assets/images/avatar-anna-kim.webp"
+              alt="Jacobe Thompson"
+              class="notifications__picture"
+            />
+            <div class="notifications__content">
+              <span class="notifications__topic">
+                <a href="#" class="notifications__userlink">Anna Kim</a>
+                left the group
+                <a href="#" class="notifications__grouplink">Chess Club</a>
+              </span>
+              <span class="notifications__date">2 weeks ago</span>
+            </div>
+          </div>
+        </main>
+      </section>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/alxrdev">Alex Rodrigues Moreira</a>.
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

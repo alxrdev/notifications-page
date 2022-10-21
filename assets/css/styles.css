@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: hsl(219, 12%, 42%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray-blue-1: hsl(211, 68%, 94%);
+  --light-gray-blue-2: hsl(205, 33%, 90%);
+  --gray-blue: hsl(219, 14%, 63%);
+  --dark-gray-blue-1: hsl(219, 12%, 42%);
+  --dark-gray-blue-2: hsl(224, 21%, 14%);
+
+  --desktop: 1440px;
+  --mobile: 375px;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--light-gray-blue-1);
+}
+
+.app {
+  max-width: 100vw;
+  min-height: 100vh;
+
+  margin: 64px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notifications {
+  width: 100%;
+  max-width: 730px;
+
+  padding: 32px;
+
+  background-color: var(--white);
+  box-shadow: 5px 8px 15px var(--light-gray-blue-2);
+
+  border-radius: 12px;
+  border: 1px solid var(--light-gray-blue-1);
+}
+
+.notifications__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.notifications__title__count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notifications__title {
+  color: var(--dark-gray-blue-2);
+}
+
+.notifications__count {
+  min-width: 30px;
+  padding: 3px;
+
+  background-color: var(--blue);
+  color: var(--white);
+
+  text-align: center;
+  font-weight: bold;
+
+  border-radius: 6px;
+}
+
+.notifications__action {
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.notifications__action:hover {
+  color: var(--blue);
+}
+
+.notifications__list {
+  margin-top: 32px;
+}
+
+.notifications__item {
+  width: 100%;
+  display: block;
+
+  display: flex;
+  gap: 16px;
+
+  margin-bottom: 8px;
+  padding: 16px;
+
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.notifications__item:hover {
+  background-color: var(--light-gray-blue-1);
+
+  border-radius: 4px;
+  border: 1px solid var(--light-gray-blue-2);
+}
+
+.notifications__item:has(.notifications__message:hover) {
+  background-color: var(--white);
+  border: 1px solid transparent;
+}
+
+.notifications__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.notifications__item--unread {
+  background-color: var(--light-gray-blue-1);
+
+  border-radius: 4px;
+  border: 1px solid var(--light-gray-blue-2);
+}
+
+.notifications__item--unread .notifications__topic::after {
+  content: "";
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+
+  margin-left: 3px;
+  margin-bottom: 1px;
+
+  background-color: var(--red);
+  border-radius: 100%;
+}
+
+.notifications__picture {
+  width: 40px;
+  height: 40px;
+}
+
+.notifications__topic {
+  display: block;
+}
+
+.notifications__userlink {
+  font-weight: bold;
+  color: var(--dark-gray-blue-2);
+  text-decoration: none;
+}
+
+.notifications__postlink {
+  font-weight: bold;
+  color: var(--dark-gray-blue-1);
+  text-decoration: none;
+}
+
+.notifications__grouplink {
+  font-weight: bold;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.notifications__userlink:hover,
+.notifications__postlink:hover,
+.notifications__grouplink:hover {
+  color: var(--blue);
+}
+
+.notifications__date {
+  font-size: 1em;
+}
+
+.notifications__message {
+  padding: 20px;
+  margin-top: 16px;
+
+  background-color: var(--white);
+
+  border-radius: 4px;
+  border: 1px solid var(--light-gray-blue-2);
+
+  pointer-events: auto;
+  transition: all 0.3s;
+}
+
+.notifications__message:hover {
+  background-color: var(--light-gray-blue-2);
+}
+
+.notifications__postimage {
+  width: 40%;
+  max-width: 50px;
+  margin-left: auto;
+}
+
+.notifications__postimage img {
+  width: 100%;
+}
+
+.attribution {
+  margin-top: 32px;
+  display: none;
+}
+
+@media screen and (max-width: 560px) {
+  :root {
+    font-size: 56%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  :root {
+    font-size: 50%;
+  }
+
+  .app {
+    margin: 0;
+  }
+
+  .notifications {
+    padding: 16px;
+    border-radius: 0;
+  }
+}
